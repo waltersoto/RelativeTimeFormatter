@@ -3,7 +3,7 @@ using System;
 
 namespace RelativeTimeFormatter
 {
-    public static class RelativeTimeFormatter
+    public static class Formatter
     {
         public static ITimeLocalization Localization { get; set; } = new EnglishTimeLocalization();
 

@@ -5,12 +5,12 @@ namespace RelativeTimeFormatter.Extensions
     {
         public static string ToRelativeString(this TimeSpan timeSpan)
         {
-            return RelativeTimeFormatter.Format(timeSpan);
+            return Formatter.Format(timeSpan);
         }
 
         public static string ToRelativeString(this DateTime target, DateTime? reference)
         {
-            return RelativeTimeFormatter.Format(target, reference);
+            return Formatter.Format(target, reference);
         }
     }
 }
