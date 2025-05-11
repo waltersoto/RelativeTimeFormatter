@@ -34,7 +34,7 @@ using RelativeTimeFormatter;
 
 var now = DateTime.UtcNow;
 var fiveMinutesAgo = now.AddMinutes(-5);
-var inTwoHours = now.AddHours(2);
+var inTwoHours = now.AddHours(2).AddSeconds(1);
 
 Console.WriteLine(Formatter.Format(fiveMinutesAgo)); // "5 minutes ago"
 Console.WriteLine(Formatter.Format(inTwoHours));     // "in 2 hours"
@@ -67,7 +67,7 @@ using RelativeTimeFormatter.Localizations;
 
 Formatter.Localization = new SpanishTimeLocalization();
 
-Console.WriteLine(DateTime.UtcNow.AddHours(-2).ToRelativeString()); // "hace 2 horas"
+Console.WriteLine(DateTime.UtcNow.AddHours(-2).AddSeconds(1).ToRelativeString()); // "hace 2 horas"
 ```
 
 ---
