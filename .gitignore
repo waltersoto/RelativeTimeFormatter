@@ -1,0 +1,32 @@
+# Build artifacts
+bin
+obj
+
+# Visual Studio settings
+.vs
+.user
+.suo
+
+# Rider settings
+.idea
+
+# Mac OS junk
+.DS_Store
+
+# NuGet
+.nupkg
+.snupkg
+.nuspec
+packages
+.symbols.nupkg
+
+# User-specific files
+.userprefs
+.userosscache
+.sln.docstates
+
+# Logs
+.log
+
+# Tests
+TestResults

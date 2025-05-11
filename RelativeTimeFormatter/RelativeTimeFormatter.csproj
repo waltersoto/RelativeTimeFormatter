@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Relative Time Formatter</Title>
+		<Description>A lightweight C# library for formatting TimeSpan or DateTime differences into human-readable text, with localization support.</Description>
+		<Copyright>Walter M. Soto</Copyright>
+		<PackageProjectUrl>https://github.com/waltersoto/RelativeTimeFormatter</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/waltersoto/RelativeTimeFormatter</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>time timespan datetime formatter humanize relative localization logging</PackageTags>
+	</PropertyGroup>
+
+</Project>
