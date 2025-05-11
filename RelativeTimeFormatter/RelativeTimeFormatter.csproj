@@ -1,28 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
-    <!-- NuGet Metadata -->
-    <PackageId>RelativeTimeFormatter</PackageId>
-    <Title>Relative Time Formatter</Title>
-    <Authors>Walter M. Soto</Authors>
-    <Description>A lightweight C# library for formatting TimeSpan or DateTime differences into human-readable text, with localization support.</Description>
-    <Copyright>Walter M. Soto</Copyright>
-    <PackageProjectUrl>https://github.com/waltersoto/RelativeTimeFormatter</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/waltersoto/RelativeTimeFormatter</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>time timespan datetime formatter humanize relative localization logging</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <!-- Optional: version, or leave for CI tag script -->
-    <Version>1.0.0</Version>
-  </PropertyGroup>
+		<!-- NuGet Metadata -->
+		<PackageId>RelativeTimeFormatter</PackageId>
+		<Title>Relative Time Formatter</Title>
+		<Authors>Walter M. Soto</Authors>
+		<Description>A lightweight C# library for formatting TimeSpan or DateTime differences into human-readable text, with localization support.</Description>
+		<Copyright>Walter M. Soto</Copyright>
+		<PackageProjectUrl>https://github.com/waltersoto/RelativeTimeFormatter</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/waltersoto/RelativeTimeFormatter</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>time timespan datetime formatter humanize relative localization logging</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<!-- Optional: version, or leave for CI tag script -->
+		<Version>1.0.1</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
