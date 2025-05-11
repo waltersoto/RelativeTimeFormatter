@@ -12,6 +12,14 @@
 		<RepositoryUrl>https://github.com/waltersoto/RelativeTimeFormatter</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>time timespan datetime formatter humanize relative localization logging</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>

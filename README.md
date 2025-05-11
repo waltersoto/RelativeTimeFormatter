@@ -9,7 +9,7 @@
 - Format `TimeSpan` or `DateTime` differences
 - Outputs expressions like "5 hours ago", "in 3 minutes", or "just now"
 - Fully pluggable localization (English and Spanish included)
-- Designed for .NET (supports .NET Standard and .NET Core)
+- Designed for .NET (supports .NET 8.0)
 
 ---
 
