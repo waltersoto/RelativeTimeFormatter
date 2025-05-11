@@ -1,7 +1,7 @@
 name: Publish NuGet Package
 
 on:
-  workflow_dispatch:  # 🔹 Enables manual trigger via GitHub UI
+  workflow_dispatch:  # Manual trigger via GitHub UI
 
 jobs:
   build-and-publish:
@@ -16,13 +16,14 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore RelativeTimeFormatter/RelativeTimeFormatter.csproj
 
       - name: Build
-        run: dotnet build --configuration Release
+        run: dotnet build RelativeTimeFormatter/RelativeTimeFormatter.csproj --configuration Release
 
       - name: Pack
-        run: dotnet pack --configuration Release --output ./nupkg
+        run: dotnet pack RelativeTimeFormatter/RelativeTimeFormatter.csproj --configuration Release --output ./nupkg
 
       - name: Push to NuGet
         run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+
